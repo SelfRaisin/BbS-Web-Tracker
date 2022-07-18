@@ -1,0 +1,250 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url("Background.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+.footer {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: black;
+  text-align: center;
+}
+.footing {
+  text-align: center;
+}
+img.pic {
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    border: 1px solid black;
+    margin-top: 12%;
+    margin-left: 25%;
+    background-color: #3F3F3F;
+}
+tr {
+    /*border: 1px solid black;*/
+}
+td {
+    /*border: 1px solid black;*/
+    width: 115px;
+    height: 115px;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.images {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    max-width: 100px;
+}
+.two {
+    width: 50px;
+    height: 50px;
+    margin-top: -75px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.three {
+    width: 50px;
+    height: 50px;
+    margin-top: -75px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.four {
+    width: 50px;
+    height: 50px;
+    margin-top: -75px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.five {
+    width: 50px;
+    height: 50px;
+    margin-top: -75px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.six {
+    width: 50px;
+    height: 50px;
+    margin-top: -75px;
+    margin-left: 40px;
+    z-index: 1;
+}
+.seven {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.eight {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.nine {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.ten {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.eleven {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.twelve {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.thirteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.fourteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.fifteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.sixteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.seventeen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.eighteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.nineteen {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+.twenty {
+  width: 50px;
+  height: 50px;
+  margin-top: -75px;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+.opaque {
+    opacity: 0.30;
+}
+h1 {
+    text-align: left;
+}

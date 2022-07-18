@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHBbS Tracker</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div id="Worlds">
+            <table>
+                <tr>
+                    <!--Contains Land of Departure-->
+                    <td>
+                        <div class="images" onclick="displayLoD()">
+                            <img class="opaque" id="LoD" src="Images/Worlds/LoD.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Enchanted Dominion-->
+                    <td>
+                        <div class="images" onclick="displayED()">
+                            <img class="opaque" id="ED" src="Images/Worlds/ED.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Castle of Dreams-->
+                    <td>
+                        <div class="images" onclick="displayCoD()">
+                            <img class="opaque" id="CoD" src="Images/Worlds/CoD.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Dwarf Woodlands-->
+                    <td>
+                        <div class="images" onclick="displayDW()">
+                            <img class="opaque" id="DW" src="Images/Worlds/DW.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Radiant Garden-->
+                    <td>
+                        <div class="images" onclick="displayRG()">
+                            <img class="opaque" id="RG" src="Images/Worlds/RG.png" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Contains Olympus-->
+                    <td>
+                        <div class="images" onclick="displayOC()">
+                            <img class="opaque" id="OC" src="Images/Worlds/OC.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Disney Town-->
+                    <td>
+                        <div class="images" onclick="displayDT()">
+                            <img class="opaque" id="DT" src="Images/Worlds/DT.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Deep Space-->
+                    <td>
+                        <div class="images" onclick="displayDS()">
+                            <img class="opaque" id="DS" src="Images/Worlds/DS.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Neverland-->
+                    <td>
+                        <div class="images" onclick="displayNVL()">
+                            <img class="opaque" id="NVL" src="Images/Worlds/NVL.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Mysterious Tower-->
+                    <td>
+                        <div class="images" onclick="displayMT()">
+                            <img class="opaque" id="MT" src="Images/Worlds/MT.png" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Contains Keyblade Graveyard-->
+                    <td>
+                        <div class="images" onclick="displayKG()">
+                            <img class="opaque" id="KG" src="Images/Worlds/KG.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains World of Darkness-->
+                    <td>
+                        <div class="images" onclick="displayWoD()">
+                            <img class="opaque" id="WoD" src="Images/Worlds/WoD.png" />
+                        </div>
+                    </td>
+
+                    <!--I Miscounted so other stuff starts here - Void Gear-->
+                    <td>
+                        <div class="images" onclick="displayVoid()">
+                            <img class="opaque" id="Void" src="Images/Wpn/Void.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains No Name-->
+                    <td>
+                        <div class="images" onclick="displayNoName()">
+                            <img class="opaque" id="NoName" src="Images/Wpn/NoName.png" />
+                        </div>
+                    </td>
+
+                    <!--Contains Royal Radiance-->
+                    <td>
+                        <div class="images" onclick="displayRadiance()">
+                            <img class="opaque" id="Radiance" src="Images/Wpn/Radiance.png" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <!--D-Links & misc - I'm not titling all of these fuck it-->
+                    <td>
+                        <div class="images" onclick="displayAqua()">
+                            <img class="opaque" id="Aqua" src="Images/Links/Aqua.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayVentus()">
+                            <img class="opaque" id="Ventus" src="Images/Links/Ven.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayTerra()">
+                            <img class="opaque" id="Terra" src="Images/Links/Terra.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayMaleficent()">
+                            <img class="opaque" id="Maleficent" src="Images/Links/Maleficent.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayCinderella()">
+                            <img class="opaque" id="Cinderella" src="Images/Links/Cinderella.png" />
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="images" onclick="displaySnowWhite()">
+                            <img class="opaque" id="SnowWhite" src="Images/Links/SnowWhite.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayStitch()">
+                            <img class="opaque" id="Stitch" src="Images/Links/Stitch.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayMickey()">
+                            <img class="opaque" id="Mickey" src="Images/Links/Mickey.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayDonald()">
+                            <img class="opaque" id="Donald" src="Images/Links/Donald.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayGoofy()">
+                            <img class="opaque" id="Goofy" src="Images/Links/Goofy.png" />
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="images" onclick="displayZack()">
+                            <img class="opaque" id="Zack" src="Images/Links/Zack.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayPan()">
+                            <img class="opaque" id="Pan" src="Images/Links/Pan.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayPete()">
+                            <img class="opaque" id="Pete" src="Images/Links/Pete.png" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displaySticker()">
+                            <img class="opaque" id="Sticker" src="Images/Misc/Sticker.png" />
+                            <div class="hidden" id=Sticker2>
+                                <img class="two" src="Images/Numbers/2.png">
+                            </div>
+                            <div class="hidden" id=Sticker3>
+                                <img class="three" src="Images/Numbers/3.png">
+                            </div>
+                            <div class="hidden" id=Sticker4>
+                                <img class="four" src="Images/Numbers/4.png">
+                            </div>
+                            <div class="hidden" id=Sticker5>
+                                <img class="five" src="Images/Numbers/5.png">
+                            </div>
+                            <div class="hidden" id=Sticker6>
+                                <img class="six" src="Images/Numbers/6.png">
+                            </div>
+                            <div class="hidden" id=Sticker7>
+                                <img class="seven" src="Images/Numbers/7.png">
+                            </div>
+                            <div class="hidden" id=Sticker8>
+                                <img class="eight" src="Images/Numbers/8.png">
+                            </div>
+                            <div class="hidden" id=Sticker9>
+                                <img class="nine" src="Images/Numbers/9.png">
+                            </div>
+                            <div class="hidden" id=Sticker10>
+                                <img class="ten" src="Images/Numbers/10.png">
+                            </div>
+                            <div class="hidden" id=Sticker11>
+                                <img class="eleven" src="Images/Numbers/11.png">
+                            </div>
+                            <div class="hidden" id=Sticker12>
+                                <img class="twelve" src="Images/Numbers/12.png">
+                            </div>
+                            <div class="hidden" id=Sticker13>
+                                <img class="thirteen" src="Images/Numbers/13.png">
+                            </div>
+                            <div class="hidden" id=Sticker14>
+                                <img class="fourteen" src="Images/Numbers/14.png">
+                            </div>
+                            <div class="hidden" id=Sticker15>
+                                <img class="fifteen" src="Images/Numbers/15.png">
+                            </div>
+                            <div class="hidden" id=Sticker16>
+                                <img class="sixteen" src="Images/Numbers/16.png">
+                            </div>
+                            <div class="hidden" id=Sticker17>
+                                <img class="seventeen" src="Images/Numbers/17.png">
+                            </div>
+                            <div class="hidden" id=Sticker18>
+                                <img class="eighteen" src="Images/Numbers/18.png">
+                            </div>
+                            <div class="hidden" id=Sticker19>
+                                <img class="nineteen" src="Images/Numbers/19.png">
+                            </div>
+                            <div class="hidden" id=Sticker20>
+                                <img class="twenty" src="Images/Numbers/20.png">
+                            </div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="images" onclick="displayShotlock()">
+                            <img class="opaque" id="Shotlock" src="Images/Misc/Shotlock.png" />
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footing">
+            KHBbSR Tracker V1.0 - This was made in under 2 hours apologies for the mess
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</body>
+
+<script>
+    var LoDCounter = 0;
+    var EDCounter = 0;
+    var CoDCounter = 0;
+    var DWCounter = 0;
+    var RGCounter = 0;
+    var OCCounter = 0;
+    var DTCounter = 0;
+    var DSCounter = 0;
+    var NVLCounter = 0;
+    var MTCounter = 0;
+    var KGCounter = 0;
+    var WoDCounter = 0;
+    var VoidCounter = 0;
+    var NoNameCounter = 0;
+    var RadianceCounter = 0;
+    var AquaCounter = 0;
+    var VentusCounter = 0;
+    var TerraCounter = 0;
+    var MaleficentCounter = 0;
+    var CinderellaCounter = 0;
+    var SnowWhiteCounter = 0;
+    var StitchCounter = 0;
+    var MickeyCounter = 0;
+    var DonaldCounter = 0;
+    var GoofyCounter = 0;
+    var ZackCounter = 0;
+    var PanCounter = 0;
+    var PeteCounter = 0;
+    var StickerCounter = 0;
+    var ShotlockCounter = 0;
+
+
+    function displayLoD() {
+        if (LoDCounter % 2 == 0) {
+            $("#LoD").removeClass("opaque");
+        }
+        else if (LoDCounter % 2 == 1) {
+            $("#LoD").addClass("opaque");
+        }
+        LoDCounter++;
+    }
+
+    function displayED() {
+        if (EDCounter % 2 == 0) {
+            $("#ED").removeClass("opaque");
+        }
+        else if (EDCounter % 2 == 1) {
+            $("#ED").addClass("opaque");
+        }
+        EDCounter++;
+    }
+
+    function displayCoD() {
+        if (CoDCounter % 2 == 0) {
+            $("#CoD").removeClass("opaque");
+        }
+        else if (CoDCounter % 2 == 1) {
+            $("#CoD").addClass("opaque");
+        }
+        CoDCounter++;
+    }
+
+    function displayDW() {
+        if (DWCounter % 2 == 0) {
+            $("#DW").removeClass("opaque");
+        }
+        else if (DWCounter % 2 == 1) {
+            $("#DW").addClass("opaque");
+        }
+        DWCounter++;
+    }
+
+    function displayRG() {
+        if (RGCounter % 2 == 0) {
+            $("#RG").removeClass("opaque");
+        }
+        else if (RGCounter % 2 == 1) {
+            $("#RG").addClass("opaque");
+        }
+        RGCounter++;
+    }
+
+    function displayOC() {
+        if (OCCounter % 2 == 0) {
+            $("#OC").removeClass("opaque");
+        }
+        else if (OCCounter % 2 == 1) {
+            $("#OC").addClass("opaque");
+        }
+        OCCounter++;
+    }
+
+    function displayDT() {
+        if (DTCounter % 2 == 0) {
+            $("#DT").removeClass("opaque");
+        }
+        else if (DTCounter % 2 == 1) {
+            $("#DT").addClass("opaque");
+        }
+        DTCounter++;
+    }
+
+    function displayDS() {
+        if (DSCounter % 2 == 0) {
+            $("#DS").removeClass("opaque");
+        }
+        else if (DSCounter % 2 == 1) {
+            $("#DS").addClass("opaque");
+        }
+        DSCounter++;
+    }
+
+    function displayNVL() {
+        if (NVLCounter % 2 == 0) {
+            $("#NVL").removeClass("opaque");
+        }
+        else if (NVLCounter % 2 == 1) {
+            $("#NVL").addClass("opaque");
+        }
+        NVLCounter++;
+    }
+
+    function displayMT() {
+        if (MTCounter % 2 == 0) {
+            $("#MT").removeClass("opaque");
+        }
+        else if (MTCounter % 2 == 1) {
+            $("#MT").addClass("opaque");
+        }
+        MTCounter++;
+    }
+
+    function displayKG() {
+        if (KGCounter % 2 == 0) {
+            $("#KG").removeClass("opaque");
+        }
+        else if (KGCounter % 2 == 1) {
+            $("#KG").addClass("opaque");
+        }
+        KGCounter++;
+    }
+
+    function displayWoD() {
+        if (WoDCounter % 2 == 0) {
+            $("#WoD").removeClass("opaque");
+        }
+        else if (WoDCounter % 2 == 1) {
+            $("#WoD").addClass("opaque");
+        }
+        WoDCounter++;
+    }
+
+    function displayVoid() {
+        if (VoidCounter % 2 == 0) {
+            $("#Void").removeClass("opaque");
+        }
+        else if (VoidCounter % 2 == 1) {
+            $("#Void").addClass("opaque");
+        }
+        VoidCounter++;
+    }
+
+    function displayNoName() {
+        if (NoNameCounter % 2 == 0) {
+            $("#NoName").removeClass("opaque");
+        }
+        else if (NoNameCounter % 2 == 1) {
+            $("#NoName").addClass("opaque");
+        }
+        NoNameCounter++;
+    }
+
+    function displayRadiance() {
+        if (RadianceCounter % 2 == 0) {
+            $("#Radiance").removeClass("opaque");
+        }
+        else if (RadianceCounter % 2 == 1) {
+            $("#Radiance").addClass("opaque");
+        }
+        RadianceCounter++;
+    }
+
+    function displayAqua() {
+        if (AquaCounter % 2 == 0) {
+            $("#Aqua").removeClass("opaque");
+        }
+        else if (AquaCounter % 2 == 1) {
+            $("#Aqua").addClass("opaque");
+        }
+        AquaCounter++;
+    }
+
+    function displayVentus() {
+        if (VentusCounter % 2 == 0) {
+            $("#Ventus").removeClass("opaque");
+        }
+        else if (VentusCounter % 2 == 1) {
+            $("#Ventus").addClass("opaque");
+        }
+        VentusCounter++;
+    }
+
+    function displayTerra() {
+        if (TerraCounter % 2 == 0) {
+            $("#Terra").removeClass("opaque");
+        }
+        else if (TerraCounter % 2 == 1) {
+            $("#Terra").addClass("opaque");
+        }
+        TerraCounter++;
+    }
+
+    function displayMaleficent() {
+        if (MaleficentCounter % 2 == 0) {
+            $("#Maleficent").removeClass("opaque");
+        }
+        else if (MaleficentCounter % 2 == 1) {
+            $("#Maleficent").addClass("opaque");
+        }
+        MaleficentCounter++;
+    }
+
+    function displayCinderella() {
+        if (CinderellaCounter % 2 == 0) {
+            $("#Cinderella").removeClass("opaque");
+        }
+        else if (CinderellaCounter % 2 == 1) {
+            $("#Cinderella").addClass("opaque");
+        }
+        CinderellaCounter++;
+    }
+
+    function displaySnowWhite() {
+        if (SnowWhiteCounter % 2 == 0) {
+            $("#SnowWhite").removeClass("opaque");
+        }
+        else if (SnowWhiteCounter % 2 == 1) {
+            $("#SnowWhite").addClass("opaque");
+        }
+        SnowWhiteCounter++;
+    }
+
+    function displayStitch() {
+        if (StitchCounter % 2 == 0) {
+            $("#Stitch").removeClass("opaque");
+        }
+        else if (StitchCounter % 2 == 1) {
+            $("#Stitch").addClass("opaque");
+        }
+        StitchCounter++;
+    }
+
+    function displayMickey() {
+        if (MickeyCounter % 2 == 0) {
+            $("#Mickey").removeClass("opaque");
+        }
+        else if (MickeyCounter % 2 == 1) {
+            $("#Mickey").addClass("opaque");
+        }
+        MickeyCounter++;
+    }
+
+    function displayDonald() {
+        if (DonaldCounter % 2 == 0) {
+            $("#Donald").removeClass("opaque");
+        }
+        else if (DonaldCounter % 2 == 1) {
+            $("#Donald").addClass("opaque");
+        }
+        DonaldCounter++;
+    }
+
+    function displayGoofy() {
+        if (GoofyCounter % 2 == 0) {
+            $("#Goofy").removeClass("opaque");
+        }
+        else if (GoofyCounter % 2 == 1) {
+            $("#Goofy").addClass("opaque");
+        }
+        GoofyCounter++;
+    }
+
+    function displayZack() {
+        if (ZackCounter % 2 == 0) {
+            $("#Zack").removeClass("opaque");
+        }
+        else if (ZackCounter % 2 == 1) {
+            $("#Zack").addClass("opaque");
+        }
+        ZackCounter++;
+    }
+
+    function displayPan() {
+        if (PanCounter % 2 == 0) {
+            $("#Pan").removeClass("opaque");
+        }
+        else if (PanCounter % 2 == 1) {
+            $("#Pan").addClass("opaque");
+        }
+        PanCounter++;
+    }
+
+    function displayPete() {
+        if (PeteCounter % 2 == 0) {
+            $("#Pete").removeClass("opaque");
+        }
+        else if (PeteCounter % 2 == 1) {
+            $("#Pete").addClass("opaque");
+        }
+        PeteCounter++;
+    }
+
+    function displaySticker() {
+        if (StickerCounter % 21 == 0) {
+            $("#Sticker").removeClass("opaque");
+        }
+        else if (StickerCounter % 21 == 1) {
+            $("#Sticker2").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 2) {
+            $("#Sticker2").addClass("hidden");
+            $("#Sticker3").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 3) {
+            $("#Sticker3").addClass("hidden");
+            $("#Sticker4").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 4) {
+            $("#Sticker4").addClass("hidden");
+            $("#Sticker5").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 5) {
+            $("#Sticker5").addClass("hidden");
+            $("#Sticker6").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 6) {
+            $("#Sticker6").addClass("hidden");
+            $("#Sticker7").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 7) {
+            $("#Sticker7").addClass("hidden");
+            $("#Sticker8").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 8) {
+            $("#Sticker8").addClass("hidden");
+            $("#Sticker9").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 9) {
+            $("#Sticker9").addClass("hidden");
+            $("#Sticker10").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 10) {
+            $("#Sticker10").addClass("hidden");
+            $("#Sticker11").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 11) {
+            $("#Sticker11").addClass("hidden");
+            $("#Sticker12").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 12) {
+            $("#Sticker12").addClass("hidden");
+            $("#Sticker13").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 13) {
+            $("#Sticker13").addClass("hidden");
+            $("#Sticker14").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 14) {
+            $("#Sticker14").addClass("hidden");
+            $("#Sticker15").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 15) {
+            $("#Sticker15").addClass("hidden");
+            $("#Sticker16").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 16) {
+            $("#Sticker16").addClass("hidden");
+            $("#Sticker17").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 17) {
+            $("#Sticker17").addClass("hidden");
+            $("#Sticker18").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 18) {
+            $("#Sticker18").addClass("hidden");
+            $("#Sticker19").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 19) {
+            $("#Sticker19").addClass("hidden");
+            $("#Sticker20").removeClass("hidden");
+        }
+        else if (StickerCounter % 21 == 20) {
+            $("#Sticker20").addClass("hidden");
+            $("#Sticker").addClass("opaque");
+        }
+        StickerCounter++;
+    }
+
+    function displayShotlock() {
+        if (ShotlockCounter % 2 == 0) {
+            $("#Shotlock").removeClass("opaque");
+        }
+        else if (ShotlockCounter % 2 == 1) {
+            $("#Shotlock").addClass("opaque");
+        }
+        ShotlockCounter++;
+    }
+</script>
+</html>
+
+
